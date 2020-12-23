@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[] args) {
     String str = "navE si eman yM iH";
-    System.out.println("String to be reversed: " + str + "\n");
+    System.out.println("String: " + str + "\n");
 
     str = reverseString(str);
 
