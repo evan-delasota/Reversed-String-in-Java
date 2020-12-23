@@ -1,15 +1,24 @@
 class Main {
   public static void main(String[] args) {
     String str = "navE si eman yM iH";
-    char[] charInput = str.toCharArray();
+    System.out.println("String to be reversed: " + str + "\n");
+
+    str = reverseString(str);
+
+    System.out.println("String Reversed: " + str + "\n");
+  }
+
+  public static String reverseString(String string) {
+    if (string.length() <= 1 ) {
+      return string;
+    }
+
+    char[] charInput = string.toCharArray();
     String reversedInput = "";
-
-    System.out.println(str);
-
-    for (int i = charInput.length - 1; i >= 0; --i) {
+      for (int i = charInput.length - 1; i >= 0; --i) {
       reversedInput += charInput[i];
     }
 
-    System.out.println(reversedInput);
+    return reversedInput;
   }
 }
