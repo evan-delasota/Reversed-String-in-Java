@@ -1,6 +1,6 @@
 class Main {
   public static void main(String[] args) {
-    String str = "ierdnA si eman yM iH";
+    String str = "navE si eman yM iH";
     char[] charInput = str.toCharArray();
     String reversedInput = "";
 
